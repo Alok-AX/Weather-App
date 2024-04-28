@@ -68,3 +68,47 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Component: Temp
+
+This is a React functional component that fetches and displays weather information for a specified city.
+
+## State Variables:
+
+#### city: Holds the main weather data (temperature, humidity, etc.).
+
+#### wind: Holds the wind data (speed, direction).
+
+#### search: Holds the current city being searched.
+
+## API Fetch:
+
+Uses useEffect hook to fetch weather data from the OpenWeatherMap API whenever the search value changes.
+
+The URL includes the city to search for, units in metric, and the API key.
+
+## Input Element:
+
+An input element allows users to enter the city they want weather information for.
+
+As the input changes, the search state is updated.
+
+## Weather Information Display:
+
+If weather data is available, it displays information including the city name, temperature, humidity, and wind speed/direction.
+Uses FontAwesome icon (FaLocationDot) for the location marker.
+
+## Conditional Rendering:
+
+If no city data is found, a "No data found" message is displayed.
+
+Otherwise, the weather information is displayed.
+
+## Styling:
+
+Classes like tempreture_box, box, input_data, and info are used to style the component, though the specific styles are not provided in the code.
+
+## Export:
+
+The Temp component is exported as the default export from the file.
