@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.tempreture_box{
+    width: 400px;
+    height: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background: #000046; 
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
+    background: linear-gradient(to right, #1CB5E0, #000046); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.input_data input{
+    padding: 10px 20px;
+    background: #ebebeb;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+}
+.info h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    
+}
+.info h1 svg{
+    color: rgb(8 25 92);
+    margin-right: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.info{
+    color: #fff;
+ 
+}
+.main_body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.datanot{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
 }
